@@ -1,0 +1,45 @@
+<mat-toolbar color="primary" id="header">
+    <h2>Bake & Cake</h2>
+    <div id="icons">
+        <a routerLink="">
+        <button mat-icon-button class=" home-icon" aria-label="icon-button with home icon">
+            <mat-icon>home</mat-icon>
+        </button>
+    </a>
+    <a routerLink="login">
+    <button mat-icon-button class="domain" aria-label="View demo order requests">
+       <mat-icon>domain</mat-icon>
+    </button>
+    </a>
+    </div>
+</mat-toolbar>
+
+<app-search (searchText)="onSearchText($event)"></app-search>
+
+<div id="chip">
+    <mat-chip-listbox #chips (click)="searchChip(chips.value)"  aria-label="Category Selection">
+        <mat-chip-option value="cookies">Cookies</mat-chip-option>
+        <mat-chip-option  value="cake" color="warn">Cake</mat-chip-option>
+        <mat-chip-option  value="brownies" color="accent">Brownies</mat-chip-option>
+      </mat-chip-listbox>
+</div>
+
+<div class="card" *ngFor="let item of items" >
+    <mat-card mat-ripple [matRippleCentered]="true" class="card-content">
+        <img src="assets/bakery-placeholder.svg" alt="" width="280" height="250">
+        <mat-card-content>
+            <h4>{{item?.itemName}}</h4>
+           <h3> ${{item?.price}} per {{item?.Weight}}</h3>
+            <p id="rating">
+                Rating: {{item?.rating}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <a routerLink="cart/{{item.id}}">
+            <button mat-icon-button >
+               <mat-icon  class="cart-icon" color="primary" matTooltip="add to cart">shopping_cart</mat-icon>
+            </button>
+            </a>
+            </mat-card-actions>
+    </mat-card>
+</div>

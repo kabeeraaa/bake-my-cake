@@ -1,0 +1,149 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "itemName": "Berries Summer Cupcakes",
+      "price": 2.5,
+      "Weight": "500gms",
+      "rating": 4,
+      "category": "cake"
+    },
+    {
+      "id": 2,
+      "itemName": "Brownies Different Flavor",
+      "price": 1.5,
+      "Weight": "500gms",
+      "rating": 4,
+      "category": "brownies"
+    },
+    {
+      "id": 3,
+      "itemName": "Butter Cookies",
+      "price": 2,
+      "Weight": "500gms",
+      "rating": 4,
+      "category": "cookies"
+    },
+    {
+      "id": 4,
+      "itemName": "Cherry Jelly Cheesecake",
+      "price": 3,
+      "Weight": "500gms",
+      "rating": 4,
+      "category": "cake"
+    },
+    {
+      "id": 5,
+      "itemName": "Chocolate Blueberries Cake",
+      "price": 2.5,
+      "Weight": "500gms",
+      "rating": 4,
+      "category": "cake"
+    },
+    {
+      "id": 6,
+      "itemName": "Chocolate Bonbons",
+      "price": 1.5,
+      "Weight": "500gms",
+      "rating": 4,
+      "category": "cake"
+    },
+    {
+      "id": 7,
+      "itemName": "Chocolate Cookies",
+      "price": 3.5,
+      "Weight": "500gms",
+      "rating": 4,
+      "category": "cookies"
+    },
+    {
+      "id": 8,
+      "itemName": "Chocolate Cupcake",
+      "price": 4.5,
+      "Weight": "500gms",
+      "rating": 4,
+      "category": "cake"
+    },
+    {
+      "id": 9,
+      "itemName": "Chocolate Summer Berries",
+      "price": 4.5,
+      "Weight": "500gms",
+      "rating": 4,
+      "category": "cake"
+    },
+    {
+      "id": 10,
+      "itemName": "Classic Cheesecake",
+      "price": 3,
+      "Weight": "500gms",
+      "rating": 4,
+      "category": "cake"
+    },
+    {
+      "id": 11,
+      "itemName": "Cookies Cream Cake",
+      "price": 4.5,
+      "Weight": "500gms",
+      "rating": 4,
+      "category": "cake"
+    },
+    {
+      "id": 12,
+      "itemName": "Easter Cupcakes",
+      "price": 1.5,
+      "Weight": "500gms",
+      "rating": 4,
+      "category": "cake"
+    },
+    {
+      "id": 13,
+      "itemName": "Fruit Cake",
+      "price": 1.5,
+      "Weight": "500gms",
+      "rating": 4,
+      "category": "cake"
+    },
+    {
+      "id": 14,
+      "itemName": "Isometric chocolate brownies",
+      "price": 5.5,
+      "Weight": "500gms",
+      "rating": 4,
+      "category": "brownies"
+    },
+    {
+      "id": 15,
+      "itemName": "Monster Theme Cake",
+      "price": 2.5,
+      "Weight": "500gms",
+      "rating": 4,
+      "category": "cake"
+    },
+    {
+      "id": 16,
+      "itemName": "Muffin Devil Horns",
+      "price": 1.5,
+      "Weight": "500gms",
+      "rating": 4,
+      "category": "cake"
+    },
+    {
+      "id": 17,
+      "itemName": "Muffin Ghost",
+      "price": 1.5,
+      "Weight": "500gms",
+      "rating": 4,
+      "category": "cake"
+    },
+    {
+      "id": 18,
+      "itemName": "Pumpkin Spice Cupcakes",
+      "price": 3.5,
+      "Weight": "500gms",
+      "rating": 4,
+      "category": "cake"
+    }
+  ],
+  "cakeRequest": []
+}

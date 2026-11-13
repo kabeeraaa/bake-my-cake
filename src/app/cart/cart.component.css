@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header > nav > mat-icon {
+    cursor: pointer;
+}
+#header > h1{
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 30px;
+}
+
+#item-content {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#item-detail {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding : 0 10px;
+}
+
+#item-detail img {
+    width: 80%;
+}
+#item-detail p {
+    width: 90%;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+#item-request {
+    width: 35%;
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
+}
+
+#per-item {
+    font-size: small;
+}

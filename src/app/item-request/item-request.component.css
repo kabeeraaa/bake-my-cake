@@ -1,0 +1,29 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header > a{
+    color: white;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#logout{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin:15px;
+    
+}
+
+#request-section{
+    display: flex;
+
+    width:70%;
+    margin-left: 14%;
+}

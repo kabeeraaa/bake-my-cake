@@ -1,0 +1,17 @@
+<div >
+    <mat-form-field appearance="fill" class="search">
+        <input matInput [(ngModel)]="textVal" type="search" placeholder="Search Product" />
+        
+    </mat-form-field>
+    <button mat-icon-button (click)="searchNote()">
+        <mat-icon >search</mat-icon>
+    </button>
+</div>
+
+<!-- <div id="chip">
+    <mat-chip-listbox #chips (click)="searchChip($event)"  aria-label="Category Selection">
+        <mat-chip-option value="cookies">Cookies</mat-chip-option>
+        <mat-chip-option  value="cake" color="warn">Cake</mat-chip-option>
+        <mat-chip-option  value="brownies" color="accent">Brownies</mat-chip-option>
+      </mat-chip-listbox>
+</div> -->

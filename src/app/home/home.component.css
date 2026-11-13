@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#header > h2{
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 30px;
+}
+
+#icons > * {
+    margin-right: 15px;
+}
+
+
+#icons > a{
+    color: whitesmoke;
+}
+
+
+.card{
+    display: inline-flex;
+    margin-left: 40px;
+   
+}
+
+.card-content{
+    text-align: center;
+    margin: 15px;
+    padding: 12px;
+    
+}
+
+div {
+    text-decoration: none;
+    color: navy;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.75em;
+}
+
+
+#chip{
+    margin-left: 470px;
+    margin-top: -15px;
+}
+mat-chip-option{
+    margin-left: 20px !important;
+}
+
+
+#rating{
+    font-size: 15px;
+}
+
+
+.mat-card-actions{
+    margin-bottom: 5px;
+}

@@ -1,0 +1,27 @@
+#mainblock{
+    justify-content: center;
+    margin-left: 650px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header > a{
+    color: white;
+}
+
+#head{
+    margin-left: -100px;
+}
+
+.mat-form-field{
+    width: 450px !important;
+    margin-left: -100px;
+}
+
+.example-form button{
+    margin-left: 280px;
+    border-radius: 15px;
+}

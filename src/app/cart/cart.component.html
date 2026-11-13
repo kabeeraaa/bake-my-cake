@@ -1,0 +1,70 @@
+<mat-toolbar id="header" color="primary">
+    <h1>Bake & Cake</h1>
+    <nav>
+        <mat-icon routerLink="/">home</mat-icon>
+    </nav>
+</mat-toolbar>
+<section id="item-content">
+    <div id="item-detail">
+        <h1>{{items?.itemName}}</h1>
+        
+        <img src="assets/bakery-placeholder.svg" alt="">
+        <!-- <p>{{items?.description}}</p> -->
+        <h2>Product Price ${{items?.price}} USD &nbsp;<span id="per-item"> PER {{items?.Weight}}</span></h2>
+    </div>
+    <form id="item-request" #orderForm="ngForm" (ngSubmit)="orderForm.valid && makeRequest()">
+        <h1>Book this Product</h1>
+        
+        
+        <mat-form-field appearance="fill">
+            <mat-label>Select Date for delivery</mat-label>
+            <!-- <input matInput type="date" required placeholder="date" name="dateOfDelivery" [(ngModel)] = "itemRequest.dateOfDelivery"> -->
+            <input matInput [matDatepicker]="picker" [min]="today" name="dateOfDelivery" [(ngModel)]="itemRequest.dateOfDelivery" required>
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        
+        </mat-form-field>
+        <h3>Enter fictional contact details</h3>
+        <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput type="text"required placeholder="Name" name="customerName" [(ngModel)] = "itemRequest.customerName" #customerName="ngModel">
+            <mat-error *ngIf="customerName?.errors?.['required']">Name is required</mat-error>
+
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" email required placeholder="Email" name="customerEmail" [(ngModel)] = "itemRequest.customerEmail" #customerEmail="ngModel">
+            <mat-error *ngIf="customerEmail?.errors?.['required']">Email is required</mat-error>
+            
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Phone</mat-label>
+            <input matInput type="phone"required placeholder="Phone" name="customerPhone" [(ngModel)] = "itemRequest.customerPhone" #customerPhone="ngModel">
+            <mat-error *ngIf="customerPhone?.errors?.['required']"> Phone number is Required</mat-error>
+            
+        </mat-form-field>
+        <div class="address" >
+            <mat-form-field class="street">
+                <input matInput type="text" name="street" placeholder="Street" [(ngModel)]="itemRequest.street" >
+                
+            </mat-form-field>
+    
+            <mat-form-field class="street">
+                <input matInput type="text" name="city" placeholder="City" [(ngModel)]="itemRequest.city">
+                
+            </mat-form-field>
+    
+            <mat-form-field class="state">
+                <input matInput type="text" name="state" placeholder="State" [(ngModel)]="itemRequest.state">
+               
+            </mat-form-field>
+    
+            <mat-form-field class="state">
+                <input matInput type="text" name="zipCode" placeholder="Zip Code" [(ngModel)]="itemRequest.zipCode">
+                
+            </mat-form-field>
+        </div>
+        <button mat-flat-button color="primary" type="submit" [disabled]="orderForm.invalid">Order Now</button>
+    </form>
+</section>
